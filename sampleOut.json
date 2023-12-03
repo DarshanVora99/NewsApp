@@ -1,0 +1,58 @@
+{
+    "status": "ok",
+    "totalResults": 4,
+    "articles": [
+        {
+            "source": {
+                "id": null,
+                "name": "NDTV News"
+            },
+            "author": null,
+            "title": "Rising Dengue Cases, Hospitalisation In Delhi \"Worrying\": Lt Governor VK Saxena - NDTV",
+            "description": "NDTV.com: India, Business, Bollywood, Cricket, Video and Breaking News",
+            "url": "https://www.ndtv.com",
+            "urlToImage": "https://cdn.ndtv.com/common/images/ogndtv.png",
+            "publishedAt": "2023-10-23T13:38:44Z",
+            "content": ""
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Hindustan Times"
+            },
+            "author": "HT Sports Desk",
+            "title": "PAK vs AFG Live World Cup: Late blitz by Iftikhar, Shadab take PAK to 282/7 - Hindustan Times",
+            "description": "Pakistan vs Afghanistan Live Score, Cricket World Cup 2023: Follow the Live Updates of PAK vs AFG, World Cup encounter in Chennai",
+            "url": "https://www.hindustantimes.com/cricket/pakistan-vs-afghanistan-live-score-icc-world-cup-2023-today-23-october-pak-vs-afg-22nd-odi-match-in-chennai-101698036665602.html",
+            "urlToImage": "https://www.hindustantimes.com/ht-img/img/2023/10/23/1600x900/India-Cricket-WCup-47_1698067640359_1698067680089.jpg",
+            "publishedAt": "2023-10-23T12:17:57Z",
+            "content": "Imam-ul-Haq and Abdullah Shafique gave Pakistan a good start after they won the toss and opted to bat. The pair added 56 runs for the open wicket before Azmatullah Omarzai provided Afghanistan with t… [+2164 chars]"
+        },
+        {
+            "source": {
+                "id": "the-times-of-india",
+                "name": "The Times of India"
+            },
+            "author": "TOI Sports Desk",
+            "title": "Former India captain and legendary spinner Bishan Singh Bedi passes away at 77 - IndiaTimes",
+            "description": "Cricket News: Former India captain Bishan Singh Bedi represented the Indian national cricket team from 1966 to 1979, during which he emerged as one of the finest sp",
+            "url": "https://timesofindia.indiatimes.com/sports/cricket/news/former-india-captain-and-legendary-spinner-bishan-singh-bedi-passes-away-at-77/articleshow/104649869.cms",
+            "urlToImage": "https://static.toiimg.com/thumb/msid-104649856,width-1070,height-580,imgsize-39936,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+            "publishedAt": "2023-10-23T10:25:00Z",
+            "content": "Bishan Singh Bedi: Remembering the legend's top bowling spellsOften referred to as 'poetry in motion' by cricket romantics, left-arm spinner Bishan Singh Bedi ruled the world along with his three par… [+162 chars]"
+        },
+        {
+            "source": {
+                "id": "the-times-of-india",
+                "name": "The Times of India"
+            },
+            "author": "TIMESOFINDIA.COM",
+            "title": "India vs New Zealand: Cricket fans euphoric as India hands over NZ its first defeat of ICC WC 2023 - Times of India",
+            "description": "The celebrations kicked off as India secured its first victory against New Zealand in the ICC World Cup 2023 on October 22. In pursuit of a 274-run target, India triumphed in 48 overs, breaking a 20-year jinx. Virat Kohli emerged as the top scorer wi",
+            "url": "https://timesofindia.indiatimes.com/videos/news/india-vs-new-zealand-cricket-fans-euphoric-as-india-hands-over-nz-its-first-defeat-of-icc-wc-2023/videoshow/104638952.cms",
+            "urlToImage": "https://timesofindia.indiatimes.com/photo/msid-104638952,imgsize-79304.cms",
+            "publishedAt": "2023-10-23T03:28:36Z",
+            "content": "Oct 23, 2023, 08:58AM ISTSource: ANIThe celebrations kicked off as India secured its first victory against New Zealand in the ICC World Cup 2023 on October 22. In pursuit of a 274-run target, India t… [+571 chars]"
+        }
+    ]
+}
