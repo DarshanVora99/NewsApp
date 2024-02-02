@@ -1,10 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 
-export default class NewsItem extends Component {
+const NewsItem = ({ title, desc, imgurl, newsurl, author, date, source })=> {
 
 
-  render() {
-    let { title, desc, imgurl, newsurl, author, date, source } = this.props;
+ 
+   
     return (
       <div >
 
@@ -31,8 +31,10 @@ export default class NewsItem extends Component {
         </div>
       </div>
     );
-  }
+  
 }
+
+export default NewsItem;
 
 // API key
 // 5b1cc141fd0645109311ff99ce3718a8
