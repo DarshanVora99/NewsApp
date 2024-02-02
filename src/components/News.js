@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import NewsItem from "./NewsItem";
 import Spinner from "./Spinner";
 
+import InfiniteScroll from "react-infinite-scroll-component";
+
 
 const News = (props) => {
 
@@ -11,13 +13,11 @@ const News = (props) => {
   const [totalArticles, setTotalArticles] = useState(0)
 
 
-  document.title = new String(props.category).toLocaleUpperCase()+" News"
+  document.title = new String(props.category).toLocaleUpperCase() + " News"
 
   // useEffect
   useEffect(() => {
     updateNews();
-
-
   }, [])
 
 
@@ -29,7 +29,7 @@ const News = (props) => {
     try {
       let data = await fetch(url);
       let parsedData = await data.json();
-      setArticles(parsedData.articles)
+      setArticles((prevArticles) => [...prevArticles, ...parsedData.articles]);
       setTotalArticles(parsedData.totalResults)
 
     } catch (error) {
@@ -39,20 +39,14 @@ const News = (props) => {
     }
   }
 
-  const handlePreviousClick = async () => {
 
-    console.log("Prev");
-    setPage(page-1);
+
+  const fetchMoreData = async () => {
+
     
-  updateNews();
-
-  };
-
-  const handleNextClick = async () => {
-    
-    setPage(page+1);
-    console.log("Next");
+    setPage(page + 1);
     updateNews();
+
   };
 
   console.log("I am render");
@@ -61,14 +55,18 @@ const News = (props) => {
     <div className="container my-3">
       <h3 className="text-center" style={{ margin: "30px 0px" }}>News App Top   {new String(props.category).toUpperCase()} Headlines </h3>
 
-      {loading && <Spinner />}
 
 
 
       <div className="row">
-        {articles.map((element) => {
 
-          return (
+        <InfiniteScroll
+          dataLength={articles.length}
+          next={fetchMoreData}
+          hasMore={articles.length !== totalArticles}
+          loader={<h4>Loading...</h4>}
+        >
+          {articles.map((element) => (
             <div className="col md-4" key={element.url}>
               <NewsItem
                 title={element.title}
@@ -84,29 +82,18 @@ const News = (props) => {
                 source={element.source.name}
               />
             </div>
-          );
-        })}
+          ))}
+        </InfiniteScroll>
+
+
       </div>
-      <div className="container my-2 d-flex justify-content-between">
-        <button
-          disabled={page <= 1}
-          onClick={handlePreviousClick}
-          type="button"
-          className="btn btn-primary btn-sm"
-        >
-          {" "}
-          &larr; Previous
-        </button>
-        <button
-          disabled={page >= Math.ceil(totalArticles / props.pageSize)}
-          onClick={handleNextClick}
-          type="button"
-          className="btn btn-primary btn-sm"
-        >
-          Next &rarr;
-        </button>
-      </div>
+
+
+
+
+
     </div>
+
   );
 }
 
